@@ -1,0 +1,1 @@
+give @s glass[custom_name='{"bold":true,"color":"dark_red","text":"Crystal Crown"}',lore=['{"color":"dark_purple","text":"Peter\'s Glass"}'],custom_model_data=1,unbreakable={}] 1
