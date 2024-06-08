@@ -1,1 +1,3 @@
 give @s bow[custom_name='{"bold":true,"color":"dark_red","text":"LightningStrike"}',lore=['{"color":"dark_purple","text":"Peter\'s Bow"}'],unbreakable={},custom_model_data=1,enchantments={levels:{"minecraft:infinity":1}}] 1
+
+summon item ~ ~ ~ {Item:{id:"minecraft:bow",count:1,components:{"minecraft:custom_name":'{"bold":true,"color":"dark_red","text":"LightningStrike"}',"minecraft:lore":['{"color":"dark_purple","text":"Peter\'s Bow"}'],"minecraft:unbreakable":{},"minecraft:damage":1.0,"minecraft:custom_model_data":1,"minecraft:enchantments":{levels:{"minecraft:infinity":1}}}}}

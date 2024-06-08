@@ -1,3 +1,9 @@
 {
-  "values": ["item:tick", "power:armor", "power:weapon"]
+  "values": [
+    "item:tick",
+    "special:armor",
+    "special:craft",
+    "special:item",
+    "special:weapon"
+  ]
 }
