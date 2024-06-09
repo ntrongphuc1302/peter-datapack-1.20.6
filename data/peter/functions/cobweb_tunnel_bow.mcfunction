@@ -1,0 +1,1 @@
+give @s bow[custom_name='{"bold":true,"color":"dark_red","text":"Tunnel Buster"}',lore=['{"color":"dark_purple","text":"Peter\'s Bow"}'],unbreakable={},custom_model_data=5,enchantments={levels:{"minecraft:infinity":1}}] 1

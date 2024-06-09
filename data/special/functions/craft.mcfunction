@@ -58,3 +58,38 @@ execute as @e[type=item,tag=tempest_talons,nbt={Item:{}}] run kill @e[type=item,
 
 tag @e[tag=tempest_talons,type=item] remove tempest_talons
 
+# Cobweb Bow
+
+execute as @e[type=item,nbt={Item:{id:"minecraft:bow"}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:string"}},distance=..1] run summon item ~ ~0.1 ~ {Tags:["cobweb_bow"],Item:{id:"minecraft:bow",count:1,components:{"minecraft:custom_name":'{"bold":true,"color":"dark_red","text":"Spider\'s Grasp"}',"minecraft:lore":['{"color":"dark_purple","text":"Peter\'s Bow"}'],"minecraft:unbreakable":{},"minecraft:custom_model_data":4,"minecraft:enchantments":{levels:{"minecraft:infinity":1}}}}}
+
+execute as @e[type=item,nbt={Item:{id:"minecraft:bow"}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:string"}},distance=..1] run playsound minecraft:entity.parrot.imitate.spider player @e[type=player,distance=0..10] ~ ~ ~ 50
+
+execute as @e[type=item,tag=cobweb_bow,nbt={Item:{}}] run kill @e[type=item,nbt={Item:{id:"minecraft:string"}},sort=nearest,limit=1]
+
+execute as @e[type=item,tag=cobweb_bow,nbt={Item:{}}] run kill @e[type=item,nbt={Item:{id:"minecraft:bow"}},sort=nearest,limit=1]
+
+tag @e[tag=cobweb_bow,type=item] remove cobweb_bow
+
+# Cobweb Tunnel Bow
+
+execute as @e[type=item,nbt={Item:{id:"minecraft:bow"}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:iron_shovel"}},distance=..1] run summon item ~ ~0.1 ~ {Tags:["cobweb_tunnel_bow"],Item:{id:"minecraft:bow",count:1,components:{"minecraft:custom_name":'{"bold":true,"color":"dark_red","text":"Tunnel Buster"}',"minecraft:lore":['{"color":"dark_purple","text":"Peter\'s Bow"}'],"minecraft:unbreakable":{},"minecraft:custom_model_data":5,"minecraft:enchantments":{levels:{"minecraft:infinity":1}}}}}
+
+execute as @e[type=item,nbt={Item:{id:"minecraft:bow"}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:iron_shovel"}},distance=..1] run playsound minecraft:entity.parrot.imitate.spider player @e[type=player,distance=0..10] ~ ~ ~ 50
+
+execute as @e[type=item,tag=cobweb_tunnel_bow,nbt={Item:{}}] run kill @e[type=item,nbt={Item:{id:"minecraft:iron_shovel"}},sort=nearest,limit=1]
+
+execute as @e[type=item,tag=cobweb_tunnel_bow,nbt={Item:{}}] run kill @e[type=item,nbt={Item:{id:"minecraft:bow"}},sort=nearest,limit=1]
+
+tag @e[tag=cobweb_tunnel_bow,type=item] remove cobweb_tunnel_bow
+
+# Calamity Bow
+
+execute as @e[type=item,nbt={Item:{id:"minecraft:bow"}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:nether_star"}},distance=..1] run summon item ~ ~0.1 ~ {Tags:["calamity_bow"],Item:{id:"minecraft:bow",count:1,components:{"minecraft:custom_name":'{"bold":true,"color":"dark_red","text":"Calamity\'s Call"}',"minecraft:lore":['{"color":"dark_purple","text":"Peter\'s Bow"}'],"minecraft:unbreakable":{},"minecraft:custom_model_data":6,"minecraft:enchantments":{levels:{"minecraft:infinity":1}}}}}
+
+execute as @e[type=item,nbt={Item:{id:"minecraft:bow"}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:nether_star"}},distance=..1] run playsound minecraft:entity.generic.explode player @e[type=player,distance=0..10] ~ ~ ~ 50
+
+execute as @e[type=item,tag=calamity_bow,nbt={Item:{}}] run kill @e[type=item,nbt={Item:{id:"minecraft:nether_star"}},sort=nearest,limit=1]
+
+execute as @e[type=item,tag=calamity_bow,nbt={Item:{}}] run kill @e[type=item,nbt={Item:{id:"minecraft:bow"}},sort=nearest,limit=1]
+
+tag @e[tag=calamity_bow,type=item] remove calamity_bow
