@@ -516,8 +516,6 @@ execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~50 ~ ~5
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-50 ~ ~50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~50 ~ ~-50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-50 ~ ~-50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
-
-
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~1 ~-20 ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-1 ~-20 ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~ ~-20 ~-1 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
@@ -918,7 +916,6 @@ execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~50 ~-20
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-50 ~-20 ~50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~50 ~-20 ~-50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-50 ~-20 ~-50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
-
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~1 ~-40 ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-1 ~-40 ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~ ~-40 ~-1 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
@@ -1319,7 +1316,6 @@ execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~50 ~-40
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-50 ~-40 ~50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~50 ~-40 ~-50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-50 ~-40 ~-50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
-
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~1 ~-60 ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-1 ~-60 ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~ ~-60 ~-1 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
@@ -1720,7 +1716,6 @@ execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~50 ~-60
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-50 ~-60 ~50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~50 ~-60 ~-50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-50 ~-60 ~-50 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
-
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~1 ~-80 ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~-1 ~-80 ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
 execute at @e[tag=calamity_arrow,nbt={inGround:1b}] run summon fireball ~ ~-80 ~-1 {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
