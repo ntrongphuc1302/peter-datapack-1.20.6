@@ -1,11 +1,7 @@
 # Lightning Bow
 execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":1}}}] run tag @e[type=arrow,distance=0..2] add lightning_arrow
 
-# execute at @e[tag=lightning_arrow,nbt={inGround:0b}] run execute at @e[type=!player,distance=1..5] run summon minecraft:lightning_bolt ~ ~ ~
-
-# execute at @e[tag=lightning_arrow,nbt={inGround:0b}] run particle sonic_boom ~ ~ ~
-
-execute at @e[tag=lightning_arrow,nbt={inGround:0b}] run particle minecraft:electric_spark ~ ~ ~ 0.25 0.25 0.25 1 50
+execute at @e[tag=lightning_arrow] run particle minecraft:electric_spark ~ ~ ~ 0.25 0.25 0.25 1 50
 
 execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":1}}}] run tag @e[type=player,distance=0..1,limit=1] add lightning_caster
 
@@ -15,13 +11,13 @@ execute at @e[tag=lightning_arrow,nbt={inGround:0b}] run execute at @e[distance=
 execute at @e[tag=lightning_arrow,nbt={inGround:0b}] run execute at @e[distance=1..5,tag=!lightning_caster] run summon minecraft:lightning_bolt ~ ~ ~
 execute at @e[tag=lightning_arrow,nbt={inGround:0b}] run execute at @e[distance=1..5,tag=!lightning_caster] run summon minecraft:lightning_bolt ~ ~ ~
 
+execute at @e[type=minecraft:lightning_bolt] run effect give @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":1}}}] minecraft:resistance 5 255 true
+
+execute at @e[type=minecraft:lightning_bolt] run effect give @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":1}}}] minecraft:fire_resistance 5 255 true
+
 execute at @e[type=minecraft:lightning_bolt] run kill @e[type=minecraft:arrow,tag=lightning_arrow,distance=..5]
 
-tag @a[tag=shooter] remove lightning_caster
-
-# execute as @e[type=arrow,tag=lightning_arrow] at @s run data merge entity @s {NoGravity:1b}
-
-kill @e[tag=lightning_arrow,nbt={inGround:1b}]
+tag @a remove lightning_caster
 
 
 # Teleport Bow
@@ -29,11 +25,9 @@ execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecra
 
 execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":2}}}] run tag @e[type=player,distance=0..1,limit=1] add teleporter
 
+execute at @e[tag=teleport_arrow,nbt={inGround:1b}] run effect give @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":2}}}] minecraft:resistance 5 255 true
+
 execute as @e[type=player,tag=teleporter,limit=1] at @s if entity @e[type=arrow,tag=teleport_arrow,nbt={inGround:1b}] run teleport @e[type=player,tag=teleporter,limit=1] @e[type=arrow,tag=teleport_arrow,limit=1]
-
-# execute as @e[type=arrow,tag=teleport_arrow] at @s run data merge entity @s {NoGravity:1b}
-
-# execute at @e[tag=teleport_arrow,nbt={inGround:0b}] run particle minecraft:portal ~ ~ ~ 0.25 0.25 0.25 5 50
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":2}}}] at @s if entity @e[type=arrow,tag=teleport_arrow,nbt={inGround:1b}] run particle minecraft:portal ~ ~1 ~ 0.25 0.25 0.25 1 200
 
@@ -52,15 +46,11 @@ tag @a remove teleporter
 
 execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":3}}}] run tag @e[type=arrow,distance=0..2] add explosive_arrow
 
-execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":3}}}] run execute as @a[nbt=!{Inventory:[{Slot:-106b}]}] run item replace entity @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":3}}}] weapon.offhand with minecraft:totem_of_undying
-# execute as @e[type=arrow,tag=explosive_arrow] at @s run data merge entity @s {NoGravity:1b}
+execute at @e[tag=explosive_arrow,nbt={inGround:1b}] run effect give @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":3}}}] minecraft:resistance 5 255 true
 
-# execute at @e[tag=explosive_arrow,nbt={inGround:1b}] run fill ~ ~ ~ ~ ~ ~ tnt
-
-# execute at @e[tag=explosive_arrow,nbt={inGround:1b}] run fill ~ ~1 ~ ~ ~1 ~ fire
+execute at @e[tag=explosive_arrow,nbt={inGround:1b}] run effect give @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":3}}}] minecraft:fire_resistance 5 255 true
 
 execute at @e[tag=explosive_arrow,nbt={inGround:1b}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0],Item:{id:"minecraft:tnt",count:1}}
-
 
 execute at @e[tag=explosive_arrow,nbt={inGround:1b}] run setblock ~ ~1 ~ tnt
 
@@ -73,13 +63,11 @@ kill @e[tag=explosive_arrow,nbt={inGround:1b}]
 
 execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":4}}}] run tag @e[type=arrow,distance=0..2] add cobweb_arrow
 
-# execute at @e[tag=cobweb_arrow,nbt={inGround:0b}] run execute at @e[distance=1..5] run fill ~1 ~2 ~1 ~-1 ~ ~-1 minecraft:cobweb replace air
-
 execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":4}}}] run tag @e[type=player,distance=0..1,limit=1] add web_shooter
 
 execute at @e[tag=cobweb_arrow,nbt={inGround:0b}] run execute at @e[distance=1..5,tag=!web_shooter] run fill ~1 ~2 ~1 ~-1 ~ ~-1 minecraft:cobweb replace air
 
-tag @a[tag=shooter] remove web_shooter
+tag @a remove web_shooter
 
 execute at @e[type=arrow,tag=cobweb_arrow,nbt={inGround:1b}] run playsound minecraft:entity.parrot.imitate.spider master @e[type=player,distance=0..10] ~ ~ ~ 100
 
@@ -89,12 +77,6 @@ kill @e[tag=cobweb_arrow,nbt={inGround:1b}]
 
 execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":5}}}] run tag @e[type=arrow,distance=0..2] add cobweb_tunnel_arrow
 
-# execute at @e[tag=cobweb_tunnel_arrow,nbt={inGround:0b}] run execute at @e[distance=1..5] run fill ~ ~ ~ ~ ~ ~ minecraft:cobweb replace air
-
-# execute at @e[tag=cobweb_tunnel_arrow,nbt={inGround:0b}] run execute at @e[distance=1..3] run fill ~3 ~-1 ~3 ~-3 -63 ~-3 minecraft:air
-
-# execute at @e[tag=cobweb_tunnel_arrow,nbt={inGround:0b}] run execute at @e[distance=1..3] run fill ~3 -64 ~3 ~-3 -64 ~-3 minecraft:cobweb
-
 execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":5}}}] run tag @e[type=player,distance=0..1,limit=1] add web_tunnel_digger
 
 execute at @e[tag=cobweb_tunnel_arrow,nbt={inGround:0b}] run execute at @e[distance=1..5,tag=!web_tunnel_digger] run fill ~3 ~-1 ~3 ~-3 -63 ~-3 minecraft:air
@@ -103,13 +85,29 @@ execute at @e[tag=cobweb_tunnel_arrow,nbt={inGround:0b}] run execute at @e[dista
 
 execute at @e[tag=cobweb_tunnel_arrow,nbt={inGround:0b}] run execute at @e[distance=1..5,tag=!web_tunnel_digger] run fill ~3 -64 ~3 ~-3 -64 ~-3 minecraft:cobweb
 
-tag @a[tag=shooter] remove web_tunnel_digger
+tag @a remove web_tunnel_digger
 
 execute at @e[type=arrow,tag=cobweb_tunnel_arrow,nbt={inGround:1b}] run playsound minecraft:entity.parrot.imitate.spider master @e[type=player,distance=0..10] ~ ~ ~ 100
 
 execute at @e[type=arrow,tag=cobweb_tunnel_arrow,nbt={inGround:1b}] run playsound minecraft:block.stone.break master @e[type=player,distance=0..10] ~ ~ ~ 100
 
 kill @e[tag=cobweb_tunnel_arrow,nbt={inGround:1b}]
+
+
+# Magnet Trident
+
+execute at @a[nbt={SelectedItem:{id:"minecraft:trident",count:1,components:{"minecraft:custom_model_data":1}}}] run tag @e[type=trident,distance=0..2] add magnet_trident
+
+execute at @a[nbt={SelectedItem:{id:"minecraft:trident",count:1,components:{"minecraft:custom_model_data":1}}}] run tag @e[type=player,distance=0..1,limit=1] add magnet_trident_thrower
+
+execute at @e[type=minecraft:trident,tag=magnet_trident] run tp @e[type=!minecraft:trident,tag=!magnet_trident_thrower,distance=0..3] ~ ~ ~
+
+execute at @e[type=minecraft:trident,tag=magnet_trident] run effect give @e[type=!minecraft:trident,tag=!magnet_trident_thrower,distance=0..3] minecraft:regeneration 5 1 true
+
+execute at @e[type=minecraft:trident,tag=magnet_trident] run effect give @e[type=!minecraft:trident,tag=!magnet_trident_thrower,distance=0..3] minecraft:resistance 5 1 true
+
+tag @a remove magnet_trident_thrower
+
 
 # Calamity's Call Bow
 
