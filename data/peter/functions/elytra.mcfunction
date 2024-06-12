@@ -1,1 +1,1 @@
-give @s elytra[custom_name='{"bold":true,"color":"dark_red","text":"Tempest Talons"}',lore=['{"color":"dark_purple","text":"Peter\'s Elytra"}'],unbreakable={},custom_model_data=1,enchantments={}] 1
+give @s elytra[custom_name='{"bold":true,"color":"dark_red","text":"Tempest Talons"}',lore=['{"color":"dark_purple","text":"Peter\'s Elytra"}'],unbreakable={show_in_tooltip:false},custom_model_data=1,enchantments={}] 1

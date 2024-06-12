@@ -97,3 +97,17 @@ execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components
 
 execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}}] run effect give @e[distance=1..50,nbt={HurtTime:10s}] minecraft:slowness 1 5 true
 
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0]}
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0]}
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0]}
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0]}
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0]}
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0]}
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0]}
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0]}
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0]}
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0]}
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon fireball ~ ~ ~ {ExplosionPower:127b,direction:[0.0,0.0,0.0]}
+
+
+# execute at @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_model_data":1}}},nbt={HurtTime:10s}] run summon tnt ~ ~1 ~

@@ -1,1 +1,1 @@
-give @s bow[custom_name='{"bold":true,"color":"dark_red","text":"Spider\'s Grasp"}',lore=['{"color":"dark_purple","text":"Peter\'s Bow"}'],unbreakable={},custom_model_data=4,enchantments={levels:{"minecraft:infinity":1}}] 1
+give @s bow[custom_name='{"bold":true,"color":"dark_red","text":"Spider\'s Grasp"}',lore=['{"color":"dark_purple","text":"Peter\'s Bow"}'],unbreakable={show_in_tooltip:false},custom_model_data=4,enchantments={levels:{"minecraft:infinity":1}}] 1
