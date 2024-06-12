@@ -30,3 +30,6 @@ give @s shield[banner_patterns=[{pattern:rhombus,color:white},{pattern:triangle_
 
 # Magnet Trident
 give @s trident[custom_name='{"bold":true,"color":"dark_red","text":"Tidebinder"}',lore=['{"color":"dark_purple","text":"Peter\'s Trident"}'],unbreakable={},custom_model_data=1,enchantments={levels:{"minecraft:loyalty":3},show_in_tooltip:false}] 1
+
+# Explosive Clock
+give @s clock[custom_name='{"bold":true,"color":"dark_red","text":"Doomsday Dial"}',lore=['{"color":"dark_purple","text":"Peter\'s Clock"}'],unbreakable={},custom_model_data=1,enchantments={levels:{"minecraft:infinity":1},show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000}] 1

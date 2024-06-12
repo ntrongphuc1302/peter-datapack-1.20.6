@@ -1,4 +1,4 @@
-# Lightning Bow
+#Lightning Bow
 execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":1}}}] run tag @e[type=arrow,distance=0..2] add lightning_arrow
 
 # execute at @e[tag=lightning_arrow] run particle minecraft:electric_spark ~ ~ ~ 0.25 0.25 0.25 1 50 force
@@ -23,6 +23,7 @@ tag @a remove lightning_caster
 
 
 # Teleport Bow
+
 execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":2}}}] run tag @e[type=arrow,distance=0..2] add teleport_arrow
 
 execute at @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_model_data":2}}}] run tag @e[type=player,distance=0..1,limit=1] add teleporter
@@ -46,7 +47,6 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecra
 kill @e[tag=teleport_arrow,nbt={inGround:1b}]
 
 tag @a remove teleporter
-
 
 # Explosive Bow
 
@@ -113,7 +113,6 @@ execute at @e[type=minecraft:trident,tag=magnet_trident] run effect give @e[type
 execute at @e[type=minecraft:trident,tag=magnet_trident] run effect give @e[type=!minecraft:trident,tag=!magnet_trident_thrower,distance=0..3] minecraft:resistance 5 1 true
 
 tag @a remove magnet_trident_thrower
-
 
 # Calamity's Call Bow
 
